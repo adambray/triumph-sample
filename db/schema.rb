@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20110715165533) do
     t.string   "comparison_operator"
     t.string   "comparison_value"
     t.string   "total_operator"
-    t.string   "total_value"
+    t.integer  "total_value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
