@@ -25,7 +25,8 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
     @post = Post.new
-
+    @users_select = User.all.map{|u| [u.name, u.id]}
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
@@ -35,6 +36,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @users_select = User.all.map{|u| [u.name, u.id]}
   end
 
   # POST /posts
