@@ -2,4 +2,4 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
 gem 'sqlite3'
-gem 'triumph', '>=0.2.1'
+gem 'triumph', '>=0.2.2'
