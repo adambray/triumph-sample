@@ -1,4 +1,8 @@
 <p>
   <b>Name:</b>
-  <%= Achievement.where("id = ?", completed_achievement.achievement_id).first.name %>
+  <%= Triumph::Achievement.where("id = ?", completed_achievement.achievement_id).first.name %>
+  <br />
+  <b>Description:</b>
+  <%= Triumph::Achievement.where("id = ?", completed_achievement.achievement_id).first.description %>
+  
 </p>

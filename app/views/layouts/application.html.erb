@@ -7,6 +7,9 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div id="flash">
+    <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
+  </div>
 
 <%= yield %>
 
